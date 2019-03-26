@@ -18,5 +18,12 @@
         "psr-4": {
             "Kingjian0801\\LaravelCelery\\": "src"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "kingjian0801\\laravelCelery\\CeleryServiceProvider"
+            ]
+        }
     }
 }
