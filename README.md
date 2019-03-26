@@ -2,27 +2,24 @@
 
 <p align="center"> a laravel celery dependency package.</p>
 
+## 前言
+参考官方包[gjedeer/celery-php](https://github.com/gjedeer/celery-php)，为个人项目做了简化，仅支持以redis为中间人发布celery任务。
 
-## Installing
+## 安装
 
 ```shell
 $ composer require kingjian0801/laravelCelery -vvv
 ```
 
-## Usage
+## 基本使用
 
-TODO
-
-## Contributing
-
-You can contribute in one of three ways:
-
-1. File bug reports using the [issue tracker](https://github.com/kingjian0801/laravelCelery/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/kingjian0801/laravelCelery/issues).
-3. Contribute new features or update the wiki.
-
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
-
-## License
-
-MIT
+1.PostTask(发布任务)
+```shell
+$celery = new Celery('redis地址', '密码', '数据库','队列名称');
+$celery->PostTask('任务名称', 任务数据(数组));
+```
+2.getAsyncResultMessage(查询任务状态)
+```shell
+$celery = new Celery('redis地址', '密码', '数据库','队列名称');
+$celery->getAsyncResultMessage('任务名称','任务key值');
+```
