@@ -1,4 +1,4 @@
-<h1 align="center"> laravelCelery </h1>
+<h1 align="center"> laravel-celery </h1>
 
 <p align="center"> a laravel celery dependency package.</p>
 
@@ -8,7 +8,7 @@
 ## 安装
 
 ```shell
-$ composer require kingjian0801/laravelCelery -vvv
+$ composer require kingjian0801/laravel-celery -vvv
 ```
 
 ## 基本使用

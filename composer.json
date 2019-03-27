@@ -1,5 +1,5 @@
 {
-    "name": "kingjian0801\/laravelCelery",
+    "name": "kingjian0801\/laravel-celery",
     "description": "a laravel celery dependency package",
     "license": "MIT",
     "authors": [
