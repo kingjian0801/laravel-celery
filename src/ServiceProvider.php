@@ -8,9 +8,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function register()
     {
-        $this->app->singleton(Celery::class);
+        $this->app->bind(Celery::class);
 
-        $this->app->alias(Celery::class);
     }
 
     public function provides()
