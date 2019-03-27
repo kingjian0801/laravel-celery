@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kingjian0801\\LaravelCelery\\": "src/"
+            "Kingjian0801\\Laravel-celery\\": "/src/"
         }
     },
     "extra": {

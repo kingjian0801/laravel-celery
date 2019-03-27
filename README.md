@@ -8,7 +8,7 @@
 ## 安装
 
 ```shell
-$ composer require kingjian0801/laravel-celery -vvv
+$ composer require kingjian0801/laravel-celery:dev-master
 ```
 
 ## 基本使用
