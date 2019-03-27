@@ -14,13 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Kingjian0801\\Laravel-celery\\": "/src/"
+            "Kingjian0801\\LaravelCelery\\": "./src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "kingjian0801\\laravelCelery\\ServiceProvider"
+                "Kingjian0801\\LaravelCelery\\ServiceProvider"
             ]
         }
     }
