@@ -2,7 +2,7 @@
 
 namespace Kingjian0801\LaravelCelery;
 
-class CeleryServiceProvider extends \Illuminate\Support\ServiceProvider
+class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     protected $defer = true;
 

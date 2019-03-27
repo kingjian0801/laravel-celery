@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "kingjian0801\\laravelCelery\\CeleryServiceProvider"
+                "kingjian0801\\laravelCelery\\ServiceProvider"
             ]
         }
     }
