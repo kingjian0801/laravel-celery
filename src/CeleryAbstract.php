@@ -73,7 +73,7 @@ abstract class CeleryAbstract
         }
     }
 
-    public function PostTask($task, $args, $async_result=true, $routing_key="celery", $task_args=[])
+    public function PostTask($task, $args, $task_prefix, $async_result=true, $routing_key="celery", $task_args=[])
     {
         if (!is_array($args)) {
             throw new CeleryException("Args should be an array");
@@ -84,7 +84,7 @@ abstract class CeleryAbstract
             $this->isConnected = true;
         }
 
-        $id = uniqid('php_', true);
+        $id = uniqid($task_prefix, true);
 
         if (array_keys($args) === range(0, count($args) - 1)) {
             $kwargs = [];

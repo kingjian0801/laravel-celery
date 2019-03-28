@@ -13,12 +13,17 @@ $ composer require kingjian0801/laravel-celery:dev-master
 
 ## 基本使用
 
+```shell
+use Kingjian0801\LaravelCelery\Celery;
+```
 1.PostTask(发布任务)
+
 ```shell
 $celery = new Celery('redis地址', '密码', '数据库','队列名称');
 $celery->PostTask('任务名称', 任务数据(数组));
 ```
 2.getAsyncResultMessage(查询任务状态)
+
 ```shell
 $celery = new Celery('redis地址', '密码', '数据库','队列名称');
 $celery->getAsyncResultMessage('任务名称','任务key值');
